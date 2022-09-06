@@ -32,7 +32,6 @@ class preparatoria{
 					cout<<"Cuadrado   [3]"<<endl;
 					cout<<"Pentagono  [4]"<<endl;
 					cout<<"Exagono    [5]"<<endl;
-					cout<<"Como funciona?"<<endl;
 					cin>>smc;
 					
 					switch (smc){
@@ -42,7 +41,7 @@ class preparatoria{
 							cin>>x;
 							cout<<"\nIntrodusca el valor de la altura (h): ";
 							cin>>y;
-							resultado = x * y / 2;
+							resultado = x * y / 2; //Area
 							cout<<"\nEl area es: "<<resultado<<"cm"<<endl;
 							//formula:
 							cout<<"\n\nFormula:"<<endl;
@@ -63,7 +62,7 @@ class preparatoria{
 							cin>>x;
 							cout<<"\nIntrodusca el valor de la altura (h): ";
 							cin>>y;
-							resultado = x * y;
+							resultado = x * y; //Area
 							cout<<"\nEl area es: "<<resultado<<"cm"<<endl;
 							//formula:
 							cout<<"\n\nFormula:"<<endl;
@@ -78,7 +77,7 @@ class preparatoria{
 							cout<<"______________________________________________________________"<<endl;
 							cout<<"Introdusca el valor de uno de los lados de la figura (l): ";
 							cin>>x;
-							resultado = x * 4;
+							resultado = x * 4; //Area
 							cout<<"\nEl area es: "<<resultado<<"cm"<<endl;
 							//formula:
 							cout<<"\n\nFormula:"<<endl;
@@ -89,14 +88,39 @@ class preparatoria{
 							cout<<"______________________________________________________________"<<endl;
 						break;
 						
-						case 4:
+						case 4://Pentagono
 							cout<<"______________________________________________________________"<<endl;
 							cout<<"Introdusca el valor de uno de los lados de la figura (l): ";
 							cin>>x;
 							cout<<"\nIntrodusca el valor del apotema (a): ";
 							cin>>y;
-							a = x * y;
-							resultado = ((x*5) * y) / 2;
+							a = x * 5; //Perimetro
+							resultado = ((x * 5) * y) / 2; //Area
+							cout<<"\nEl area es: "<<resultado<<"cm"<<endl;
+							//formula
+							cout<<"\n\nFormula:"<<endl;
+							cout<<"A = P . a"<<endl;
+							cout<<"---------"<<endl;
+							cout<<"    2    "<<endl;
+							cout<<"\nFormula sustituida:"<<endl;
+							cout<<"P = l . 5"<<endl;
+							cout<<"P = "<<x<<" . "<<y<<endl;
+							cout<<"P = "<<a<<"cm"<<endl;
+							cout<<"\nA = "<<a<<" . "<<y<<endl;
+							cout<<"----------"<<endl;
+							cout<<"     2    "<<endl;
+							cout<<"\nA = "<<resultado<<"cm"<<endl;
+							cout<<"______________________________________________________________"<<endl;
+						break;
+						
+						case 5: //Exagono
+							cout<<"______________________________________________________________"<<endl;
+							cout<<"Introdusca el valor de uno de los lados de la figura (l): ";
+							cin>>x;
+							cout<<"\nIntrodusca el valor del apotema (a): ";
+							cin>>y;
+							a = x * 6; //Perimetro
+							resultado = ((x * 6) * y) / 2; //Area
 							cout<<"\nEl area es: "<<resultado<<"cm"<<endl;
 							//formula
 							cout<<"\n\nFormula:"<<endl;
